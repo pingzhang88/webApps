@@ -1,0 +1,180 @@
+/* CSS Document */
+
+body {
+width:100%;
+line-height: 2em;
+font-family: Georgia, 'Sanchez', "Times New Roman", Times, serif;
+font-size: 0.8em;
+color:rgb(255,255,255);
+background-color: rgb(0,0,0);
+}
+
+a:link{
+text-decoration:none;
+color:rgb(64,159,137);
+}
+a:visited {
+text-decoration:none;
+color:rgb(130,130,130);
+}
+a:hover {
+text-decoration:none;
+color:rgb(0,204,51);
+}
+a:active {
+text-decoration:none;
+color:rgb(228,100,32);
+}
+
+h1 {
+text-align:center;
+}
+img {border:none;
+}
+
+#container {
+width: 960px;
+border: rgb(130,130,130) dotted thin;
+background: rgb(130,130,130) url(images/snow.gif) left top repeat-y;
+margin: 20px auto;
+}
+
+#header {
+width: 100%;
+height: 190px;
+background: rgb(0,0,0) url(images/headerpic.gif) left top no-repeat;
+margin:0px auto;
+}
+
+#header img {
+position:relative;
+left: 40px;
+top: 15px;
+}
+
+/* Menu--start */
+#nav {
+	width: 100%;
+	height: 40px;
+	position: relative;
+	left:0px;
+	top: -40px;
+	margin: 0 auto;
+	background-color: rgb(0,0,0);
+	filter:alpha(opacity=80);
+	background-color: rgba(0,0,0,0.8);
+}
+#nav ul {
+	list-style: none;
+	font-size: 16px;
+	margin: 0px 0px 0px -40px;
+}
+#nav>ul>li {
+	border-right: 1px dotted rgb(207,207,207);
+}
+#nav li {
+	position: relative;
+	float: left;
+}
+#nav a {
+	display: block;
+	text-decoration: none;
+	line-height: 38px;
+	padding: 0px 60px;
+}
+#nav ul ul {
+	display: none;
+	width: 180px;
+	position: absolute;
+	top: 38px;
+	left: -40px;
+	margin: 0px;
+}
+#nav ul ul a {
+	font-size: 13px;
+	font-weight: normal;
+	border-bottom: 1px dotted rgb(207,207,207);
+	width: 180px;	
+	line-height: 1.1em;
+	padding: 6px;
+}
+#nav ul li:hover > ul {
+	display: block;
+}
+#nav>ul:hover>li>ul>li a  {
+	background-color:rgb(0,0,0);
+	filter:alpha(opacity=90);
+	background-color: rgba(0,0,0,0.8);
+}
+#nav>ul>li>ul>li:hover  {
+	background-color:rgb(0,0,0);
+}
+/* Menu--end */
+
+#leftColumn {
+width: 330px;
+float: left;
+clear:left;
+margin: -25px 0px 15px 15px;
+padding:10px;
+background-color:rgb(0,0,0);		/*for IE8 and older*/
+filter:alpha(opacity=70);	/*for IE8 and older*/
+/*opacity:0.6;*/  			/*to remove inheritance,using rgba instead*/
+/* -moz-opacity:0.6;*/		/*to remove inheritance,using rgba instead*/
+background-color: rgba(0,0,0,0.7);
+}
+
+div.gallery {
+width:280px;
+margin:20px auto;
+padding:15px;
+text-align:center;
+background-color:rgb(0,0,0);
+filter:alpha(opacity=90); 
+background-color: rgba(0,0,0,0.5);
+}
+
+div.gallery div {
+display:none;
+}
+
+div.gallery:hover>div {
+display: block;
+position: fixed;
+left:20%;	/* special usage for "popup":percentage with "fixed" works better than fix size when zooming and resizing window */
+top: 5%;
+width: 600px;
+padding: 15px;
+background-color:rgb(0,0,0);
+filter:alpha(opacity=90); 
+background-color: rgba(0,0,0,0.9);
+}
+div.gallery:hover>div img{
+max-height:500px;	/* special usage for "popup":to deep big image inside one screen */
+max-width:550px
+}
+
+#rightColumn {
+width: 520px;
+float: left;
+margin: -25px auto 15px 20px;
+padding:10px 20px 10px;  
+background-color:rgb(0,0,0);
+filter:alpha(opacity=70);
+background-color: rgba(0,0,0,0.7);
+}
+
+div[title~=index] {
+height: 950px;
+}
+
+#footer {
+width:100%;
+height:60px;
+clear:both;
+margin:0px auto;
+text-align:center;
+background-color:rgb(0,0,0);
+filter:alpha(opacity=90);
+background-color: rgba(0,0,0,0.9);
+}
